@@ -1,0 +1,25 @@
+1.All coloer will be in the root of the css document example:
+
+root{
+--blue:#00FFFF
+}
+
+to use it:
+    color: var(--blue);
+
+2.use commented out sections to add your html commented
+
+
+3.remeber to push your work to github
+
+git add.
+
+git commit -m ""
+git push 
+
+4.use live server(download on extensions in vs code).
+
+5.Download images from pexels.com  NOTE:ALL IMAGES SHOULD BE IN THE IMAGES FOLDER.
+
+
+        ********************* happy coding************

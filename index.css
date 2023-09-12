@@ -1,0 +1,20 @@
+/* basic page styling do not touch */
+
+
+/* theme colors have been defined here check on css variables to use them */
+:root{
+    --dark-blue:#2519B2;
+    --light-blue:#94b6ef;
+    --light-grey:#f4f2ef;
+    --black:#2e2212;
+
+}
+body{
+        /* do not change this styles */
+    background-color: var(--light-grey);
+    font-family: 'Poppins', sans-serif;
+}
+/***************************** media queries below here **********/
+
+
+/********* PAGE ENDS HERE ***********/

@@ -12,36 +12,118 @@
       href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,400;0,500;0,900;1,400&family=Ysabeau+Office:ital,wght@0,1;0,400;1,100&display=swap"
       rel="stylesheet"
     />
-
+    <!-- font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>PORTFOLIO WEBSITE</title>
   </head>
   <body>
     <!-------------------- Navbar --------------->
-   <div class="nav-section">
-    <img src="images/mainlogo.png" alt="" srcset="">
-      <div class="nav-bar">
-        <nav>
-          <ul>
-            <li><a href="http://">Home</a></li>
-            <li><a href="http://">About</a></li>
-            <li><a href="http://">Services</a></li>
-            <li><a href="http://">Contact</a></li>
-            <li><a href="http://">Portfolio</a></li>
-            <li><a href="http://">Testimonials</a></li>
-               <div class="btn1">
-                <button>hire me</button>
-               </div>
 
-          </ul>
-        </nav>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/mainlogo.png" alt="" srcset="" />
       </div>
-  </div>
+      <div class="menu-icon">
+        <i class="fas 2xl fa-bars"></i>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+        <div>
+          <button>Hire me</button>
+        </div>
+      </ul>
+    </nav>
     <!------------------- Navbar-ends ----------->
 
     <!--------------- Showcase area here--------------->
+
+    <div class="showcasesection">
+      <div class="cont">
+        <div class="cont1">
+          <h1>John Phil</h1>
+          <p>
+            Hello! I'm <span>John PHIL</span>, a passionate programmer on a
+            mission to turn innovative ideas into elegant code. With a keyboard
+            as my paintbrush and a screen as my canvas, I craft digital
+            solutions that make the world run smoother, one line of code at a
+            time. My journey started with a fascination for problem-solving, and
+            it has since taken me through the realms of web development,
+            software engineering, and beyond. Whether I'm building interactive
+            websites, optimizing algorithms, or diving into the latest tech
+            trends
+            <!-- trends, I thrive on challenges that push the boundaries of what's
+            possible. I believe that great software isn't just functional; it's
+            an art form that combines creativity and precision. Let's
+            collaborate and bring your digital dreams to life. Explore my
+            portfolio to see the magic of code in action. -->
+          </p>
+
+          <div class="btns">
+            <a href="fake CV.pdf" download="your-cv.pdf">
+              <button class="download-button">Download CV</button>
+            </a>
+            <button class="contact">contact me</button>
+          </div>
+        </div>
+
+        <div class="cont2">
+          <img src="images/showcase.png" alt="" />
+        </div>
+      </div>
+    </div>
+
     <!--------------- Showcase area -ends here--------->
 
     <!------------------- Services section ----------->
+
+    <div class="services-section">
+      <div class="header">
+        <h3>what i do </h3>
+        <h1>Services</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="row">
+        <div class="col">
+          <i class="fa-solid  fa-laptop"></i>
+          <h2>Web-design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <button>read more</button>
+
+        </div>
+        <div class="col">
+          <i class="fa-solid fa-compass-drafting"></i>
+          <h2>Web Development</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <button>read more</button>
+
+        </div>
+        <div class="col">
+          <i class="fa-solid fa-mobile-button"></i>
+          <h2>MobileDevelopment</h2>
+          <p> dolor sit amet consectetur adipisicing elit.</p>
+          <button>read more</button>
+
+        </div>
+        <div class="col">
+          <i class="fa-solid fa-business-time"></i>
+          <h2>IT Consulting</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <button>read more</button>
+
+        </div>
+      </div>
+    </div>
+
     <!------------------- Services section ends here ----------->
 
     <!------------------- portforlio section ----------->
@@ -70,8 +152,7 @@
 
     <!-- javascrip link -->
     <script src="index.js"></script>
-    <!-- font awesome cdn link -->
-
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
     <script src="https://use.fontawesome.com/53ab3d1fac.js"></script>
   </body>
 </html>

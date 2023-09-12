@@ -1,20 +1,63 @@
 /* basic page styling do not touch */
 
-
-/* theme colors have been defined here check on css variables to use them */
-:root{
-    --dark-blue:#2519B2;
-    --light-blue:#94b6ef;
-    --light-grey:#f4f2ef;
-    --black:#2e2212;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-        /* do not change this styles */
-    background-color: var(--light-grey);
-    font-family: 'Poppins', sans-serif;
+/* theme colors have been defined here check on css variables to use them */
+:root {
+  --dark-blue: #2519b2;
+  --light-blue: #94b6ef;
+  --light-grey: #e4e3e179;
+  --black: #2e2212;
+}
+body {
+  /* do not change this styles */
+  background-color: var(--light-grey);
+  font-family: "Poppins", sans-serif;
+}
+.nav-section {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+ padding:30px 0px;
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-section img {
+  width: 90px;
+  padding-left: 20px;
+}
+.nav-section,
+ul,
+li {
+  display: flex;
+  flex-direction: row;
+  gap:2rem;
+  align-items: center;
+}
+.nav-section ul,li,a{
+    text-decoration: none;
+    color: var(--black);
+}
+..nav-section ul,li,a:hover{
+    text-decoration: underline;
+    color: var(--dark-blue);
+}
+.nav-section .btn1{
+    margin-right: 20px;
+}
+.btn1 button{
+    padding:20px  30px;
+    background-color: var(--dark-blue);
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
 }
 /***************************** media queries below here **********/
-
 
 /********* PAGE ENDS HERE ***********/

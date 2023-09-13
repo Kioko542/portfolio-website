@@ -89,6 +89,9 @@ body {
 .menu-icon i {
   color: var(--dark-blue);
 }
+.b-sections img{
+width: 50%;
+}
 .nav-links button {
   background-color: var(--dark-blue);
   color: white;
@@ -233,6 +236,19 @@ border-radius: 20px;
   background-color: var(--light-blue);
   color: white;
 }
+.card button{
+  background-color: white;
+  color: var(--dark-blue);
+  margin: auto;
+  border: none;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 15px 30px;
+  outline: none;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
 .p-images {
   padding-top: 20px;
   display: grid;
@@ -296,12 +312,137 @@ border-radius: 20px;
   line-height: 25px;
   padding: 20px 0;
 }
-/* Media Queries for responsiveness */
+.text1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  color: var(--dark-blue);
+}
+.text1 i{
+  padding-right: 8px;
+}
+.rows2{
+  display: flex;
+  justify-content: space-between;
+}
+.b-sections{
+  width: 50%;
+}
+.card-container {
+  display: flex;
+  justify-content: space-around; 
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  max-width: 520px; 
+  background-color: black;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.header{
+  padding-bottom: 30px;
+}
+.card h2{
+  color: var(--dark-blue);
+}
+.card p{
+  color: white;
+}
+.card img {
+  max-width: 320px;
+  height: auto;
+}
+.btn{
+  background-color: var(--dark-blue);
+  color: white;
+  margin:20px auto;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom:  30px;
+  margin-left: 20px; */
+  padding: 15px 30px;
+  outline: none;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.card + .card {
+  margin-left: 20px;
+}
+.information{
+  display: flex;
+  margin-top: 30px;
+  color: white;
+}
+.information i{
+  padding-right: 20px;
+
+}
+.contact-info {
+  color: white;
+  font-size: 16px;
+}
+.contact-info h3{
+    color: white;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+.footer{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+}
+.links1 ,.about{
+  margin-top: 40px;
+}
+ .links1 ,h1 ,ul ,li a{
+  text-decoration:none ;
+  list-style-type: none;
+  color: black;
+  margin-right: 20px;
+  padding-bottom:10px ;
+  text-align: center;
+
+ }
+ .lists1, input{
+  padding: 14px;
+  margin-top: 20px;
+  border: none;
+  width: 100%;
+  background-color: rgb(75, 83, 83);
+  border-radius: 20px;
+  color: white;
+ }
+/* Media 
+Queries for responsiveness */
 @media screen and (max-width: 768px) {
   .menu-icon {
     display: block;
   }
+.card-container{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.footer{
+  display: flex;
+  flex-direction: column;
+}
 
+.card{
+  padding: 40px;
+}
   .nav-links {
     display: none;
     flex-direction: column;
@@ -361,6 +502,16 @@ border-radius: 20px;
   .nav-links button {
     padding: 10px 50px;
   }
+  .footer{
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-form input{
+    width: 50%;
+  }
+.links1 input{
+  width: 50%;
+}
   .row {
     display: grid;
     grid-template-columns:  1fr;
@@ -374,6 +525,36 @@ border-radius: 20px;
     display: flex;
     flex-direction: column;
   }
+  .contact-box{
+    display: flex;
+    flex-direction: column;
+    /* padding: 20px; */
+  }
 }
-
+.contact-box{
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  background-color: #040211;
+  gap: 20px;
+  padding: 20px;
+}
+.contact-form{
+background-color: white;
+color: black;
+width: 100%;
+padding-top:20px ;
+border-radius: 20px;
+}
+.contact-form .row1{
+  padding: 20px;
+}
+.row1 input{
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+}
 /* ******** PAGE ENDS HERE ********** */

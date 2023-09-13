@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link
       href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,400;0,500;0,900;1,400&family=Ysabeau+Office:ital,wght@0,1;0,400;1,100&display=swap"
       rel="stylesheet"
     />
@@ -27,16 +31,18 @@
 
     <nav class="navbar">
       <div class="logo">
-        <img src="images/mainlogo.png" alt="" srcset="" />
+        <a href="index.html"
+          ><img src="images/mainlogo.png" alt="" srcset=""
+        /></a>
       </div>
       <div class="menu-icon">
         <i class="fas 2xl fa-bars"></i>
       </div>
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Portfolio</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#">Contact</a></li>
         <div>
           <button>Hire me</button>
@@ -47,7 +53,7 @@
 
     <!--------------- Showcase area here--------------->
 
-    <div class="showcasesection">
+    <div id="showcasesection" class="showcasesection">
       <div class="cont">
         <div class="cont1">
           <h1>John Phil</h1>
@@ -86,40 +92,36 @@
 
     <!------------------- Services section ----------->
 
-    <div class="services-section">
+    <div id="services" class="services-section">
       <div class="header">
-        <h3>what i do </h3>
+        <h3>what i do</h3>
         <h1>Services</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
       <div class="row">
         <div class="col">
-          <i class="fa-solid  fa-laptop"></i>
+          <i class="fa-solid fa-laptop"></i>
           <h2>Web-design</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <button>read more</button>
-
         </div>
         <div class="col">
           <i class="fa-solid fa-compass-drafting"></i>
-          <h2>Web Development</h2>
+          <h2>WebDevelopment</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <button>read more</button>
-
         </div>
         <div class="col">
           <i class="fa-solid fa-mobile-button"></i>
           <h2>MobileDevelopment</h2>
-          <p> dolor sit amet consectetur adipisicing elit.</p>
+          <p>dolor sit amet consectetur adipisicing elit.</p>
           <button>read more</button>
-
         </div>
         <div class="col">
           <i class="fa-solid fa-business-time"></i>
           <h2>IT Consulting</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <button>read more</button>
-
         </div>
       </div>
     </div>
@@ -127,9 +129,71 @@
     <!------------------- Services section ends here ----------->
 
     <!------------------- portforlio section ----------->
+    <div id="portfolio" class="portfolio-section">
+      <div class="p-header">
+        <h3>my works</h3>
+        <h1>porfolio</h1>
+      </div>
+      <div class="sectionbody">
+        <div class="filter">
+          <button class="filter-btnactive">All</button
+          ><button class="filter-btn">UI/UX</button>          
+          <button class="filter-btn">Web Dev</button>
+          <button class="filter-btn">Mobile App</button>
+          <button class="filter-btn">Logo Design</button>
+
+        </div>
+      </div>
+      <div class=" p-images">
+        <img src="images/tech1.jpg" alt="">
+        <img src="images/tech2.jpg" alt="">
+        <img src="images/tech3.jpg" alt="">
+        <img src="images/tech4.jpg" alt="">
+
+      </div>
+    </div>
+
     <!------------------- portforlio section ends here----------->
 
     <!------------------- About section ----------->
+<div id="about" class="about-section">
+  <div class="header">
+    <h3>who am i!</h3>
+    <h1>ABOUT-ME</h1>
+    
+  <div class="content">
+    <div class="skill">
+    <div class="skill-name">HTML</div>
+    <div class="progress-bar">
+      <div class="progress" id="html-progress"></div>
+    </div>
+  <div class="skill">
+    <div class="skill-name">CSS</div>
+    <div class="progress-bar">
+      <div class="progress" id="css-progress"></div>
+    </div>
+  </div>
+  
+  <div class="skill">
+    <div class="skill-name">JavaScript</div>
+    <div class="progress-bar">
+      <div class="progress" id="js-progress"></div>
+    </div>
+  </div>
+  <div class="skill">
+    <div class="skill-name">React</div>
+    <div class="progress-bar">
+      <div class="progress" id="react-progress"></div>
+    </div>
+  </div>
+</div>
+<div class="info">
+  <h2>Here is some info about me</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, obcaecati cum accusamus fugit praesentium <br>possimus sint odit perferendis deleniti, voluptas excepturi inventore quibusdam iusto et, dignissimos corporis <br> autem sunt aspernatur labore sapiente vero? Sint vitae neque fugit est modi, <br>fugiat eligendi doloribus eius repellendus incidunt unde nihil ex officia voluptate.</p>
+  <button >read more</button>
+
+</div>
+</div>
     <!-------------------About  sectionrecords here ----------->
 
     <!------------------- records section ----------->

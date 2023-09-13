@@ -4,6 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+
 }
 /* theme colors have been defined here check on css variables to use them */
 :root {
@@ -24,11 +26,18 @@ body {
 .navbar {
   background-color: white;
   display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   padding: 14px 20px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+.btns{
+  display: flex;
+  align-items: center;
 }
 .btns .contact {
   margin-left: 60px;
@@ -47,14 +56,29 @@ body {
   margin-right: 20px;
   color: black;
 }
-
+.info button{
+  margin-top: 30px;
+  background-color: var(--dark-blue);
+  color: white;
+  margin: auto;
+  border: none;
+  cursor: pointer;
+  padding: 15px 30px;
+  outline: none;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.info button:hover{
+  background-color: white;
+  color: var(--dark-blue);
+}
 .nav-links a {
   text-decoration: none;
   color: black;
   padding: 0px 20px;
 }
 .nav-links a:hover {
-  color: var(--dark-blue);
+  color: orangered;
 }
 .menu-icon {
   display: none; /* Hide initially on larger screens */
@@ -154,9 +178,123 @@ body {
   grid-template-columns:repeat(4, 1fr);
   gap: 3rem;
   padding: 20px;
+  background-color: var(--light-grey);
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.col{
+  border-right: 1px solid white;
+  padding-right: 10px;
 }
 .services-section {
   margin: 100px;
+}
+.portfolio-section{
+  background-color: rgba(0, 0, 0, 0.103);
+}
+.portfolio-section .p-header{
+  text-align: center;
+  padding-top: 40px;
+  font-size: 1.4rem;
+}
+.p-header  h1{
+color: var(--dark-blue);
+text-align: center;
+}
+.filter{
+  padding-top: 10px;
+}
+.filter, button{
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.filter-btn{
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: whitesmoke;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+.filter-btn:hover{
+  color: orangered;
+}
+.filter-btnactive{
+background-color: white;
+color: var(--dark-blue);
+padding: 10px 20px;
+border: none;
+border-radius: 20px;
+}
+.filter-btnactive:hover{
+  background-color: var(--light-blue);
+  color: white;
+}
+.p-images {
+  padding-top: 20px;
+  display: grid;
+  grid-template-rows: 1fr ;
+  /* object-fit: cover; */
+  object-position: center;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+  animation: animate__slideInRight;
+}
+.p-images img{
+  width: 40%;
+  height: 40%;
+  display: block;
+  border-radius: 20px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.skill-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.progress-bar {
+  width: 200px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 10px;
+}
+.info p{
+  margin-bottom: 20pxk;
+}
+.progress {
+  width: 0;
+  
+  height: 100%;
+  background-color: var(--dark-blue);
+  border-radius: 10px;
+  transition: width 0.5s ease-in-out;
+}
+.content{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 50px;
+  gap: 2rem;
+  align-items: center;
+}
+.content p{
+  width: 100%;
+  line-height: 25px;
+  padding: 20px 0;
 }
 /* Media Queries for responsiveness */
 @media screen and (max-width: 768px) {
@@ -176,8 +314,9 @@ body {
     z-index: 1;
   }
   .nav-links a{
-    color: white;
+    color: var(--dark-blue);
   }
+
   .navlinks button {
     margin-bottom: 30px;
   }
@@ -197,6 +336,7 @@ body {
   .btns {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
   .btns button {
     padding: 10px 30px;
@@ -229,6 +369,10 @@ body {
   .btns {
     display: flex;
     justify-content: center;
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
   }
 }
 
